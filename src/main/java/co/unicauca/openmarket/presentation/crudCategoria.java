@@ -26,6 +26,7 @@ public class crudCategoria extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btngGrupo1 = new javax.swing.ButtonGroup();
         pnlSeccionBotones = new javax.swing.JPanel();
         btnNueva = new javax.swing.JButton();
         btnEditar = new javax.swing.JButton();
@@ -38,7 +39,13 @@ public class crudCategoria extends javax.swing.JPanel {
         lblNameCategory = new javax.swing.JLabel();
         txtNameCategoria = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tablaCategorias = new javax.swing.JTable();
+        lblBuscar = new javax.swing.JLabel();
+        txtBuscar = new javax.swing.JTextField();
+        rdBuscarId = new javax.swing.JRadioButton();
+        btnBuscar = new javax.swing.JButton();
+        btnListarTodo = new javax.swing.JButton();
+        rdBuscarNombre = new javax.swing.JRadioButton();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -104,7 +111,7 @@ public class crudCategoria extends javax.swing.JPanel {
         pnlCrudCategoria.add(lblNameCategory, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, -1, -1));
         pnlCrudCategoria.add(txtNameCategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 230, 40));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tablaCategorias.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -115,26 +122,54 @@ public class crudCategoria extends javax.swing.JPanel {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tablaCategorias);
 
-        pnlCrudCategoria.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 580, 410));
+        pnlCrudCategoria.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 100, 580, 410));
+
+        lblBuscar.setText("Buscar por:");
+        pnlCrudCategoria.add(lblBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 60, -1, -1));
+        pnlCrudCategoria.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 50, 100, 30));
+
+        btngGrupo1.add(rdBuscarId);
+        rdBuscarId.setText("ID");
+        rdBuscarId.setToolTipText("");
+        pnlCrudCategoria.add(rdBuscarId, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 60, -1, -1));
+
+        btnBuscar.setText("Buscar");
+        btnBuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pnlCrudCategoria.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 50, -1, 30));
+
+        btnListarTodo.setText("Listar Todo");
+        btnListarTodo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pnlCrudCategoria.add(btnListarTodo, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 50, 120, 30));
+
+        btngGrupo1.add(rdBuscarNombre);
+        rdBuscarNombre.setText("Nombre");
+        pnlCrudCategoria.add(rdBuscarNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 60, -1, -1));
 
         add(pnlCrudCategoria, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btnEditar;
     private javax.swing.JButton btnGuardar;
+    private javax.swing.JButton btnListarTodo;
     private javax.swing.JButton btnNueva;
+    private javax.swing.ButtonGroup btngGrupo1;
     private javax.swing.JButton jButton5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JLabel lblBuscar;
     private javax.swing.JLabel lblCodCategoria;
     private javax.swing.JLabel lblNameCategory;
     private javax.swing.JPanel pnlCrudCategoria;
     private javax.swing.JPanel pnlSeccionBotones;
+    private javax.swing.JRadioButton rdBuscarId;
+    private javax.swing.JRadioButton rdBuscarNombre;
+    private javax.swing.JTable tablaCategorias;
+    private javax.swing.JTextField txtBuscar;
     private javax.swing.JTextField txtCodCategoria;
     private javax.swing.JTextField txtNameCategoria;
     // End of variables declaration//GEN-END:variables
