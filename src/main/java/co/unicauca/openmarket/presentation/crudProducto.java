@@ -40,7 +40,6 @@ public class crudProducto extends javax.swing.JPanel {
         txtPrecio = new javax.swing.JTextField();
         txtDireccion = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         pnlSeccionBotones = new javax.swing.JPanel();
         btnNuevo = new javax.swing.JButton();
         btnEditar = new javax.swing.JButton();
@@ -60,33 +59,26 @@ public class crudProducto extends javax.swing.JPanel {
 
         lblCodigoCategoria.setText("Codigo Cataegoria");
 
-        jLabel1.setText("jLabel1");
-
         javax.swing.GroupLayout pnlCrudpProductoLayout = new javax.swing.GroupLayout(pnlCrudpProducto);
         pnlCrudpProducto.setLayout(pnlCrudpProductoLayout);
         pnlCrudpProductoLayout.setHorizontalGroup(
             pnlCrudpProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlCrudpProductoLayout.createSequentialGroup()
-                .addGroup(pnlCrudpProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlCrudpProductoLayout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addGroup(pnlCrudpProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE)
-                            .addComponent(txtDireccion)
-                            .addComponent(txtPrecio)
-                            .addComponent(txtDescripcion)
-                            .addComponent(txtNombre)
-                            .addComponent(lblCodigoCategoria)
-                            .addComponent(lblDireccion)
-                            .addComponent(lblPrecio)
-                            .addComponent(jLabel3)
-                            .addComponent(lblNombre)
-                            .addComponent(lblCodigoProducto)
-                            .addComponent(txtCodigoProducto)))
-                    .addGroup(pnlCrudpProductoLayout.createSequentialGroup()
-                        .addGap(82, 82, 82)
-                        .addComponent(jLabel1)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(64, 64, 64)
+                .addGroup(pnlCrudpProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTextField6, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE)
+                    .addComponent(txtDireccion)
+                    .addComponent(txtPrecio)
+                    .addComponent(txtDescripcion)
+                    .addComponent(txtNombre)
+                    .addComponent(lblCodigoCategoria)
+                    .addComponent(lblDireccion)
+                    .addComponent(lblPrecio)
+                    .addComponent(jLabel3)
+                    .addComponent(lblNombre)
+                    .addComponent(lblCodigoProducto)
+                    .addComponent(txtCodigoProducto))
+                .addContainerGap(262, Short.MAX_VALUE))
         );
         pnlCrudpProductoLayout.setVerticalGroup(
             pnlCrudpProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -115,9 +107,7 @@ public class crudProducto extends javax.swing.JPanel {
                 .addComponent(lblCodigoCategoria)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         btnNuevo.setText("Nuevo");
@@ -183,7 +173,6 @@ public class crudProducto extends javax.swing.JPanel {
     private javax.swing.JButton btnEliminar;
     private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnNuevo;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JLabel lblCodigoCategoria;
