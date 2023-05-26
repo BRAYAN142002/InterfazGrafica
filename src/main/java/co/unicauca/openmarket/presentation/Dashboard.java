@@ -24,6 +24,8 @@ public class Dashboard extends javax.swing.JFrame {
     public Dashboard() {
         initComponents();
         initStyles();
+         setExtendedState(MAXIMIZED_BOTH);
+       
     }
     private void initStyles(){
       //btnPrimerBoton.putClientProperty("JButton.buttonType", "roundRect");
@@ -60,6 +62,7 @@ public class Dashboard extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1200, 600));
         setPreferredSize(new java.awt.Dimension(1200, 600));
+        setSize(new java.awt.Dimension(0, 0));
 
         pnlBarraLateral.setBackground(new java.awt.Color(38, 145, 205));
 
@@ -133,7 +136,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addComponent(btnComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(174, Short.MAX_VALUE))
+                .addContainerGap(198, Short.MAX_VALUE))
         );
 
         pnlHeader.setBackground(new java.awt.Color(0, 102, 204));
@@ -147,7 +150,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(pnlHeaderLayout.createSequentialGroup()
                 .addGap(355, 355, 355)
                 .addComponent(lblTituloHeader)
-                .addContainerGap(495, Short.MAX_VALUE))
+                .addContainerGap(767, Short.MAX_VALUE))
         );
         pnlHeaderLayout.setVerticalGroup(
             pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
