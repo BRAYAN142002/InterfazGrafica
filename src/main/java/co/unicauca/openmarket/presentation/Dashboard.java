@@ -34,7 +34,7 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     private void ShowJPanel(JPanel p){
-        p.setSize(1200,430);
+        p.setSize(900,600);
         p.setLocation(0,0);
         
         this.pnlContenidoIzquierdo.removeAll();
@@ -89,12 +89,17 @@ public class Dashboard extends javax.swing.JFrame {
 
         btnComprar.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
         btnComprar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cart-regular-48.png"))); // NOI18N
-        btnComprar.setText("Comprar");
+        btnComprar.setText("Tienda");
         btnComprar.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 10, 1, 1, new java.awt.Color(0, 0, 0)));
         btnComprar.setBorderPainted(false);
         btnComprar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnComprar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnComprar.setIconTextGap(10);
+        btnComprar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarActionPerformed(evt);
+            }
+        });
 
         btnUsuarios.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
         btnUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/user-solid-48.png"))); // NOI18N
@@ -219,6 +224,10 @@ public class Dashboard extends javax.swing.JFrame {
     private void btnProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProductoActionPerformed
         ShowJPanel(new crudProducto() );
     }//GEN-LAST:event_btnProductoActionPerformed
+
+    private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
+        ShowJPanel(new Tienda() );
+    }//GEN-LAST:event_btnComprarActionPerformed
 
     /**
      * @param args the command line arguments
