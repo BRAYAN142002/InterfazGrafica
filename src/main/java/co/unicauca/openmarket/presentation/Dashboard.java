@@ -34,7 +34,7 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     private void ShowJPanel(JPanel p){
-        p.setSize(900,600);
+        p.setSize(1200,600);
         p.setLocation(0,0);
         
         this.pnlContenidoIzquierdo.removeAll();
